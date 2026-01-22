@@ -16,12 +16,11 @@ if %errorlevel% neq 0 (
 echo [%~nx0] Git 설치 확인 완료
 
 REM ========================================
-call "C:\modules\bat\checkArgCount.bat" 3 %*
+call "%HomeDrive%\modules\bat\checkArgCount.bat" 3 %*
 if %errorlevel% neq 0 (
     echo [%~nx0] ERROR: 인자 검증 실패 %errorlevel%.
     exit /b 1
 )
-echo [%~nx0] 인자 검증 완료
 
 REM ========================================
 set user_name=%2

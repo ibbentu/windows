@@ -16,7 +16,7 @@ if "%mode%"=="global" (
     exit /b 1
 )
 
-call "C:\modules\bat\git.bat" %mode_code% %name% %email%
+call "%HomeDrive%\modules\bat\git.bat" %mode_code% %name% %email%
 if %errorlevel% neq 0 (
     echo [%~nx0] ERROR: git 설정 실패.
     pause
